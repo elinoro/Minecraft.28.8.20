@@ -1,0 +1,56 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.world {
+  margin: 50px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(20, auto);
+  grid-template-rows: repeat(20, auto);
+  border: 2px black solid;
+}
+
+.tools{
+  background: black;
+  width: 150px;
+}
+
+.tile{
+  width: 30px;
+  height: 30px;
+}
+
+.tile:hover{
+  box-shadow: 0 0 10px 0px rgb(143, 142, 142);
+}
+
+.sky{
+  background: rgb(141, 234, 247);
+}
+
+.cloud{
+  background: url('/images/cloud.PNG') no-repeat center center/cover;
+}
+
+.bush{
+  background: url('/images/bush.PNG') no-repeat center center/cover;
+}
+
+.trunk{
+  background: url('/images/trunk.PNG') no-repeat center center/cover;
+}
+
+.rock{
+  background: url('/images/rock.jpg') no-repeat center center/cover;
+}
+
+.soilGrass{
+  background: url('/images/soil.grass.jpg') no-repeat center center/cover;
+}
+
+.soil{
+  background: url('/images/soil.jpg') no-repeat center center/cover;
+}
