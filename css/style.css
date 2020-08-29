@@ -1,21 +1,23 @@
+@font-face {
+  font-family: minecraft;
+  src: url("/Minecraft.otf");
+}
+
 .container {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  font-family: minecraft;
+  font-size: 14px;
 }
 
 .world {
   margin: 50px;
-  padding: 30px;
+  padding: 25px;
   display: grid;
-  grid-template-columns: repeat(20, auto);
-  grid-template-rows: repeat(20, auto);
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
   border: 2px black solid;
-}
-
-.tools{
-  background: black;
-  width: 150px;
 }
 
 .tile{
@@ -24,7 +26,8 @@
 }
 
 .tile:hover{
-  box-shadow: 0 0 10px 0px rgb(143, 142, 142);
+  /* box-shadow: 0 0 10px 0px rgb(143, 142, 142); */
+  box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
 }
 
 .sky{
@@ -54,3 +57,41 @@
 .soil{
   background: url('/images/soil.jpg') no-repeat center center/cover;
 }
+
+
+.tools{
+  background: black;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+
+.tool{
+  height: 100px;
+  width: 80px;
+  text-align: center;
+  padding: 15px 0px;
+  margin: 10px;
+  border: 1px white solid;
+}
+
+.tool:hover{
+  background: blue;
+  border: none;
+}
+
+.tool img{
+  height: 50px;
+  width: 50px;
+}
+
+.pickaxe{
+  margin-top: 100px;
+}
+
+.toolName{
+  margin-top: 5px;
+}
+
